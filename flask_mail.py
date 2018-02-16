@@ -38,8 +38,9 @@ PY34 = PY3 and sys.version_info[1] >= 4
 if PY3:
     string_types = str,
     text_type = str
-    from email import policy
-    message_policy = policy.SMTP
+    #from email import policy
+    #message_policy = policy.SMTP
+    message_policy = None
 else:
     string_types = basestring,
     text_type = unicode
